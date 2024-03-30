@@ -132,18 +132,18 @@ body::after {
 
   .InfoOne
   {
-    display: flex;
+  display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	background-color: black;
 	padding: 5%;
-    color: white;
+  color: white;
 	margin-bottom: 100px;
-    transition: margin-top 0.5s ease, opacity 0.5s ease;
-    margin-left: -10px;
+  transition: margin-top 0.5s ease, opacity 0.5s ease;
+  margin-left: -10px;
 	margin-right: 30%;
-    border-top-right-radius: 50vw;
+  border-top-right-radius: 50vw;
 	border-bottom-right-radius: 50vw;
   }
   .imageOne 
@@ -204,6 +204,8 @@ body::after {
     justify-content: center;
     text-align: center;
     padding: 2%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 
   }
 .guestTitle
@@ -219,6 +221,7 @@ body::after {
     color: white;
     display: flex;
     flex-direction: row;
+   
   }
 .Speaker
 {
@@ -228,7 +231,6 @@ body::after {
    
     margin: 0 50px;
 }
-
   .SpeakerPhoto
   {
     height: 200px;
@@ -243,181 +245,307 @@ body::after {
       padding: 2%;
       margin-top: 20px;
 }
-
-
-
+/*Zona footer*/
 footer{
-    background-color:#000000;
-	padding: 10%;
-	color: white;
-	margin-top: -5px;
+  margin-top: -5px;
+  padding: 6%;
+  background-color: black;
+  color: white;
+  margin-bottom: -10px;
+  align-items: center;
+  justify-items: center;
+}
+footer h1{
+margin: 10px 35%;
+}
+.Footer1{
+
+margin: 5% 20%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.MenuFooter2 {
+display: flex;
+flex-direction: row;
+margin: 0 30%;
+}
+.MenuFooter2 p {
+margin: 0 20px;
 }
 
 
-.Return {
-	display: inline-block; /* Cambiamos el display a "inline-block" para que el enlace tome el tamaño del contenido */
-	padding: 10px 20px; /* Añadimos un espacio interno alrededor del enlace */
-	background-color: white; /* Fondo blanco */
-	border: 1px solid white; /* Borde blanco */
-	color: black; /* Color de texto */
-	text-decoration: none; /* Quitamos la decoración de subrayado */
-	border-radius: 5px; /* Agregamos bordes redondeados */
-  }
+.RowFooter{
+display: flex; /* Añadido para activar flexbox */
+flex-direction: column; /* Para alinear los elementos en columna */
+flex-grow: 1;
+flex-basis: 200;
+border-left: 1px solid rgb(255, 255, 255);
+padding: 3%;
+margin: 6% 5%;
+
+}
+.MenuFooter{
+border-top: 3px solid white;
+padding: 2%;
+justify-content: center;
+align-items: center;
+margin: 0 27%;
+}
+.SocialLogo {
+width: 24px; /* Establece el ancho del icono */
+height: auto; /* Mantiene la relación de aspecto */
+vertical-align: middle; /* Alinea verticalmente con el texto */
+margin-right: 5px; /* Espacio entre la imagen y el texto */
+}
+
+.FootLink {
+text-decoration: none; /* Quita el subrayado del enlace */
+color: white;
+}
+.RowFooter p:hover {
+transform: scale(1.2);
+transition: 0.5s;
+filter: drop-shadow(5px 10px 5px rgba(113, 0, 234, 0.781));
+
+}
+.FooterOptions a{
+  color: white;
+  text-decoration: none;
+  padding: 1%;
+}
+.FooterOptions a:hover{
+  color: #9b69c4;
+  text-decoration:dotted;
+  transition: ease-in-out 0.5s; 
+}
+.op{
+  border-left: 1px solid rgb(255, 255, 255);
+}
+.FooterLogo{
+  max-width: 150px;
+  max-height: auto;
+  margin: 0 10%;
+  margin-top: 20%;
+  align-items: center;
+}
+/*Muestras*/
+.Muestras {
+  background-color: #6815ac;
+  padding: 3%;
+  margin-top: 20px;
+}
+.Muestras button {
+  background-color: rgba(245, 222, 179, 0.007);
+  padding: 5%;
+  height: auto;
+  font-size: 2em;
+  border: solid 1px white;
+  margin: 0 3%;
+  width: 50%;
+}
+.Muestras button:hover {
+transform: scale(1.2);
+transition: 0.5s;
+box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.801); /* offsetX offsetY blurRadius spreadRadius color */
+}
+
+.BotonElec {
+
+  text-align: center; /* Centrar horizontalmente */
+  display: flex; /* Convertir a contenedor flex */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+@media (max-width: 1000px) {
+
   
-  .Return:hover {
-	background-color: lightgray; /* Cambiamos el fondo al pasar el mouse */
-	color: black; /* Cambiamos el color de texto al pasar el mouse */
-  }
-  
-.FooterOne {
-	
-	display: flex;
+.SnackCon
+{
+   
+    position: relative;
+    z-index: 0;
+    width: 50%;
+    height: 50%;
+    padding: 10%;
+    gap: 1%;
+    align-items: center;
+    font-size: 30px; /* Tamaño de fuente relativo al ancho del viewport */
+    margin: 10% calc((100% - 50%) / 2); /* Centrar horizontalmente y ajustar los márgenes laterales */
+}
+
+ .InfoOne
+  {
+  display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	padding: 1% 5%;
-	box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
-}
-.subf1Tittle,.titleSubs{
-	font-size: 1.5vw;
-	color: white;
-	width: 20vw;
-	margin-right: 50px;
-
-}
-
-.subFooter1 {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	padding: 0 5%;
-	color: white;
-	width: 40vw;
-	
-	align-items: left;
-	box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
-	
-}
-
-.subFooter2 {
-	flex: 1;
-	width: 40vw;
-	display: flex;
-	flex-direction: row;
-	padding: 0 5%;
-	color: white;
-	align-items: left;
-	box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
-
-
-}
-
-.sf2Contenido {
-	margin-right: 10%;
-	box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
-	margin-top: -10%;
-
-}
-
-.subMenu1 {
-	display: flex; /* Mostrar los elementos en forma de fila (horizontal) */
-	justify-content: center; /* Centrar los elementos horizontalmente */
-	align-items: center; /* Centrar los elementos verticalmente */
-	border-bottom: 1px solid rgb(255, 255, 255);
-	width: 80vw; /* Establecer el ancho al 90% */
-	margin: 0.3% auto; /* Centrar el contenedor horizontalmente */
-	color: white;
-	font-size: 20px;
-  }
-  
-  
-  .menu2 {
-	list-style: none;
-	padding: 0;
-	display: flex;
-	font-size: 1em;
-	
-	
-  }
-  
-  .menu2 li {
-	display: inline-block; /* Mostrar los elementos de la lista en una sola fila */
-	margin: 0;
-	padding: 0;
-	font-size: 1em;
-	
-  }
-  .op{
-	border-left: 1px solid rgb(255, 255, 255);
-  }
-  .menu2 li a {
-	text-decoration: none;
-	color: white;
-	padding: 10px;
-	font-size: 16px;
-	margin-right: 10px;
-	font-size: 1em;
-  }
-  
-  .menu2 li:last-child a {
-	margin-right: 0;
-  }
-  
-  .menu2 li a:hover {
-	color: #8DBF78;
-  }
-
-  
-  .footLogo{
-	background-image:url("iconos/logoWhite.png") ;
-	height: 10vw;
-	width: 10vw;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center top;
-  }
-
-  .subMenu2 {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
 	align-items: center;
-	color: white;
+	justify-content: center;
+	background-color: black;
+	padding: 2%;
+  color: white;
+	margin-bottom: 100px;
+  transition: margin-top 0.5s ease, opacity 0.5s ease;
+  margin-left: -10px;
+	margin-right: 3px;
+  border-top-right-radius: 50vw;
+	border-bottom-right-radius: 50vw;
+  margin-top: 200px;
+  }
+  .imageOne 
+  {
+    height: 120px;
+    width: auto;
+    border-radius: 100%;
+  }
+  .InfoTwo
+  {
+    margin: 10px -7.5px ;
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(170, 0, 0);
+	padding: 5%;
+    color: white;
+	margin-bottom: 100px;
+    transition: margin-top 0.5s ease, opacity 0.5s ease;
+      margin-left: 0%;
+      border-top-left-radius: 50vw;
+      border-bottom-left-radius: 50vw;
+      
+  }
+  .SobreTwo{
+      margin-left: 100px;
+      border-bottom: 1px solid #f0f0f0;
+      border-right: 1px solid #f0f0f0;
+      width: calc(90% - 4%);
+      margin-left: 0;
+     
+      padding: 2%;
+  
+  }
+
+
+
+
+  .Button-Cont
+{
+  
+  top:0;
+  left: 0;
+  display: flex;
+  background-color: rgb(150, 0, 0);
+  height: 6%;
+  padding: 0%;
+  width: 99%;
+  position: fixed;
+  z-index: 1;
+  justify-content: center;
+  
+  
+
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.button {
+	border: none;
+	background: none;
+	padding: 0 10px;
+	font-size: 18px;
+	line-height: 1;
+	text-decoration:double;
+	color: #ffffff;
+	border-bottom: 2px solid transparent;
+	transition: border-color 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+	border-color: #bfc200;
+	text-decoration:line-through;
+	text-transform:inherit;
+	color: #bfc200;
 	
   }
-.textSub2{
-	width: 60%;
-	margin-left: 5%;
+  .button:hover + #sound {
+	display: block;
+  }
+/* Añadir al CSS existente */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 10%; /* Agregar margen a la derecha */
+    background-color: #c90808;
+    width: 25%;
+    padding: 1%;
+    border-radius: 3%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform-origin: top center;
+    animation: fadeIn 0.5s ease-in-out;
+    flex-direction: column;
 }
-  .numcon{
-	padding-left: 2%;
-  }
-  .eMail{
-	padding-left: 2%;
-  }
+.submenu a {
+    width: 100%;
+    line-height: 1;
+	text-decoration:double;
+	color: #ffffff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
 
-  .icoRedes{
-	width:10%;
-	display: flex;
-	flex-direction: row;
-  }
+    transition: background-color 0.2s ease-in-out;
+}
 
-  .twitch-logo {
-	width: 100px; /* Tamaño inicial de la imagen */
-	height: 100px; /* Tamaño inicial de la imagen */
-	transition: transform 0.2s; /* Agregamos una transición de transformación */
-  }
+.submenu a:hover {
+  border-radius: 3%;
+    background-color: #FFFF00; /* Cambiar color de fondo al pasar el mouse */
+}
+
+.SobreOne
+{
+  padding: 6%;
+  border-bottom: 1px solid #f0f0f0;
+  border-left: 1px solid #f0f0f0;
+  width: calc(90% - 4%);
   
-  .twitch-logo:hover {
-	transform: scale(1.2); /* Escala la imagen al pasar el mouse (20% más grande) */
-  }
+}
+
+
+.Speakers
+{
+  padding: 3%;
+  background-color: #000000;
+  color: white;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.Speaker
+{
+  display: flex;
+  flex-direction: column; 
+  padding: 3%;
+  flex-grow: 2;
+  flex-basis: 50;
+  margin: 0 50px;
+}
+
+.SpeakerPhoto
+{
+  height: 200px;
   
-
-
-  .final{
-	margin-top: -100px;
-	font-size: 10;
+  
   }
-
-  .BITMARK{
-	color: #8DBF78;
+  .guestTitle
+  {
+      font-size: 2em;
+      border-bottom: 1px solid #f0f0f0;
+      width: calc(77% - -90px);
   }
+}
